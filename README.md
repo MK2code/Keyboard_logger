@@ -2,7 +2,7 @@
 This program, written in C++, allows users to remap keys on their keyboard according to predefined mappings or a custom configuration file. Below are instructions and explanations for using and understanding the Key Remapper program.
 
 # How to Use:
-- Compilation: Compile the program using a C++ compiler such as g++ or Visual Studio. Make sure to link against the necessary libraries if using Visual Studio.
+- Compilation: Compile the program using a C++ compiler such as g++.
 - Execution: Run the compiled executable in a Windows environment.
 - Key Mapping: The program allows for two modes of key mapping: default and custom.
   - Default Mapping: The default key mappings are predefined within the program. These mappings substitute specific keys with other keys, as per the provided mappings.
@@ -15,6 +15,7 @@ This program, written in C++, allows users to remap keys on their keyboard accor
 - fstream: Input/output stream class to operate on files.
 - sstream: String stream functionality.
 - Sleep(): Function for suspending execution of a thread for a specified interval.
+- If getting .dll missing errors, please install Visual C++ redistributable on your system from - https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 # Functionality:
 - The program captures key presses using GetAsyncKeyState() function.
 - It remaps keys based on predefined or user-defined mappings using keyMap and keyMap1 maps.
